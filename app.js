@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
 	res.render('home');
 })
 
-app.listen(process.env.PORT || 4500, () => {
-	console.log('server now up.')
+const PORT = 4500;
+
+app.listen(process.env.PORT || PORT, () => {
+	console.log('now listening to ' + PORT)
 });
